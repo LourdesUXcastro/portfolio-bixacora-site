@@ -1,0 +1,114 @@
+/*
+>>Main Colors used:
+  soft rouse: #CFC9C6
+  soft grey: #C6C2BE
+  strong rouse: #9D6B6C
+>>Range Colors used:
+  For text in white bg:
+Grey: #383838
+*/
+
+body{
+  background-color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 29px;
+  color: #383838
+}
+
+h1 {
+  font-family: "Poppins";
+  font-size: 100px;
+  font-weight: 700px;
+  line-height: 120px;
+}
+
+h2 {
+  font-family: "Poppins";
+  font-size: 56px;
+  font-weight: 700px;
+  line-height: 68px;
+}
+
+h3 {
+  font-family: "Poppins";
+  font-size: 35px;
+  font-weight: 600px;
+  line-height: 50px;
+}
+
+h4 {
+  font-family: "Roboto";
+  font-size: 34px;
+  font-weight: 300px;
+  line-height: 50px;
+}
+
+h5 {
+  font-family: "Poppins";
+  font-size: 20px;
+  font-weight: 400px;
+  line-height: 47px;
+}
+
+h6 {
+  font-family: "Poppins";
+  font-size: 13px;
+  font-weight: 500px;
+  line-height: 26px;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  color: #9D6B6C;/* no underlining */
+  text-decoration: none;
+}
+a:visited { /* visited link */
+  color: #9D6B6C;
+}
+a:hover,
+a:focus {
+  color: #CFC9C6;
+  text-decoration: underline;
+}
+a:active { /* selected link */
+  color: #ff8080;
+}
+
+/* button rules always at the end of the file, otherwise it can be overwritten*/
+.button {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #9D6B6C;
+  color: #ff8080; /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #CFC9C6; /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
+.button:hover {
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+.button:active {
+  color: #ff8080
+}
+
+.button.contact {
+  background-color: #ff8080;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 100;
+  border: 2px solid #ff8080;
+}
+.button.contact:hover {
+  background-color: #ffffff;
+  color: #ff8080;
+}
+.button.contact:active {
+  color: #9D6B6C
+}
