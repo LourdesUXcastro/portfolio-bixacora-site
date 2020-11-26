@@ -8,55 +8,118 @@
 Grey: #383838
 */
 
+header {
+  background-color: #CFC9C6;
+  text-align: center;
+  width: 100%;
+  box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.15);
+  position: fixed;
+}
+.center {
+  text-align: center;
+}
+
+/* this thing of "box-sizing" always before "body" all about layout */
+* {
+  box-sizing: border-border-box;
+}
+
+/* Layout styling */
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 0px 0; /* 25px top and bottom; 0 left and right */
+}
+
+#work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a;}
+
+#hero h1 {
+  text-align: center;
+}
+#hero {background-color: #CFC9C6;
+    padding: 20px 0;
+    display: inline-block;
+    width: 100%;
+}
+
+.logo {
+  max-width: 50px;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav > ul > li {
+  display: inline-block;
+}
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 100px;
+  color: #383838;
+}
+nav > ul > li > img {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 100px;
+  color: #383838;
+}
+main {
+  padding-top: 133px
+}
+
 body{
   background-color: #ffffff;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 29px;
-  color: #383838
+  color: #383838;
 }
 
 h1 {
   font-family: "Poppins";
-  font-size: 100px;
-  font-weight: 700px;
-  line-height: 120px;
+  font-size: 6.25em;
+  font-weight: 700;
+  line-height: 1.2;
 }
 
 h2 {
   font-family: "Poppins";
-  font-size: 56px;
-  font-weight: 700px;
-  line-height: 68px;
+  font-size: 3.5em;
+  font-weight: 700;
+  line-height: 1.2;
 }
 
 h3 {
   font-family: "Poppins";
-  font-size: 35px;
-  font-weight: 600px;
-  line-height: 50px;
+  font-size: 2.18em;
+  font-weight: 600;
+  line-height: 1,4;
 }
 
 h4 {
   font-family: "Roboto";
-  font-size: 34px;
-  font-weight: 300px;
-  line-height: 50px;
+  font-size: 2.125em;
+  font-weight: 300;
+  line-height: 2.3;
 }
 
 h5 {
   font-family: "Poppins";
-  font-size: 20px;
-  font-weight: 400px;
-  line-height: 47px;
+  font-size: 1.25em;
+  font-weight: 400;
+  line-height: 2.35;
 }
 
 h6 {
   font-family: "Poppins";
-  font-size: 13px;
-  font-weight: 500px;
-  line-height: 26px;
+  font-size: 0.812em;
+  font-weight: 500;
+  line-height: 2;
 }
 
 img {
@@ -79,6 +142,23 @@ a:active { /* selected link */
   color: #ff8080;
 }
 
+.first::first-letter {
+  font-size: 300%;
+  font-style: italic;
+}
+.box::before {
+  content: "hello";
+  display:flex;
+  width: 100px;
+  height: 50px;
+  background-color: #CFC9C6;
+}
+
+selector {
+  margin: 0 auto;
+}
+
+
 /* button rules always at the end of the file, otherwise it can be overwritten*/
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
@@ -95,7 +175,7 @@ a:active { /* selected link */
   text-decoration: none;
 }
 .button:active {
-  color: #ff8080
+  color: #ff8080;
 }
 
 .button.contact {
@@ -110,5 +190,5 @@ a:active { /* selected link */
   color: #ff8080;
 }
 .button.contact:active {
-  color: #9D6B6C
+  color: #9D6B6C;
 }
