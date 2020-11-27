@@ -19,9 +19,14 @@ header {
   text-align: center;
 }
 
+main {
+  width: 100%;
+  padding-top: 177px;
+}
+
 /* this thing of "box-sizing" always before "body" all about layout */
 * {
-  box-sizing: border-border-box;
+  box-sizing: border-box;
 }
 
 /* Layout styling */
@@ -33,7 +38,16 @@ header {
   margin: 0px 0; /* 25px top and bottom; 0 left and right */
 }
 
-#work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a;}
+#work {
+  width: 100%;
+  background-color: #75a3a3;
+  padding-top: 30px;
+  padding-bottom: 25px;
+}
+#experiences .row { padding-bottom: 25px;
+  border-bottom: 1px solid #4a4a4a;
+  margin-bottom: 25px;
+}
 
 #hero h1 {
   text-align: center;
@@ -43,6 +57,10 @@ header {
     display: inline-block;
     width: 100%;
 }
+#hero span{
+  display: block;
+}
+
 
 .logo {
   max-width: 50px;
@@ -67,9 +85,7 @@ nav > ul > li > img {
   font-weight: 100px;
   color: #383838;
 }
-main {
-  padding-top: 133px
-}
+
 
 body{
   background-color: #ffffff;
@@ -82,28 +98,28 @@ body{
 
 h1 {
   font-family: "Poppins";
-  font-size: 6.25em;
+  font-size: 1.5em;
   font-weight: 700;
   line-height: 1.2;
 }
 
 h2 {
   font-family: "Poppins";
-  font-size: 3.5em;
+  font-size: 2.5em;
   font-weight: 700;
   line-height: 1.2;
 }
 
 h3 {
   font-family: "Poppins";
-  font-size: 2.18em;
+  font-size: 1.9em;
   font-weight: 600;
   line-height: 1,4;
 }
 
 h4 {
   font-family: "Roboto";
-  font-size: 2.125em;
+  font-size: 1.5em;
   font-weight: 300;
   line-height: 2.3;
 }
@@ -191,4 +207,10 @@ selector {
 }
 .button.contact:active {
   color: #9D6B6C;
+}
+
+@@media (min-width:640) {
+  main {
+    padding-top: 119px;
+  }
 }
