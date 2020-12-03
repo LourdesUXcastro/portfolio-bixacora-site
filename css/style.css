@@ -7,8 +7,6 @@
   For text in white bg:
 Grey: #383838
 */
-
-
 header {
   background-color: #ffffff;
   text-align: unset;
@@ -16,52 +14,83 @@ header {
   box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.15);
   position: fixed;
 }
+
 .center {
   text-align: center;
 }
+
 .padding {
   padding-top: 100px;
   padding-bottom: 40px;
 }
+
 main {
   padding-top: 177px;
 }
 
 /* Top and Bottom borders come in */
-ul.topBotomBordersIn a:before, ul.topBotomBordersIn a:after
-{
-    position: absolute;
-    left: 0px;
-    width: 100%;
-    height: 2px;
-    background: #9D6B6C;
-    content: "";
-    opacity: 0;
-    transition: all 0.3s;
+ul.topBotomBordersIn a:before, ul.topBotomBordersIn a:after {
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+  background: #9D6B6C;
+  content: "";
+  opacity: 0;
+  transition: all 0.3s;
 }
 
-ul.topBotomBordersIn a:before
-{
-    top: 0px;
-    transform: translateY(-10px);
+ul.topBotomBordersIn a:before {
+  top: 0px;
+  transform: translateY(-10px);
 }
 
-ul.topBotomBordersIn a:after
-{
-    bottom: 0px;
-    transform: translateY(10px);
+ul.topBotomBordersIn a:after {
+  bottom: 0px;
+  transform: translateY(10px);
 }
 
-ul.topBotomBordersIn a:hover:before, ul.topBotomBordersIn a:hover:after
-{
-    opacity: 1;
-    transform: translateY(0px);
+ul.topBotomBordersIn a:hover:before, ul.topBotomBordersIn a:hover:after {
+  opacity: 1;
+  transform: translateY(0px);
 }
 
-ul.topBotomBordersIn li{
+ul.topBotomBordersIn li {
   position: relative;
 }
 
+/*nav ul li:last-child a:before {
+  display: none;
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+  background: #9D6B6C;
+  content: "";
+  opacity: 0;
+  transition: all 0.3s
+}
+
+nav ul li:last-child a:before {
+  display: none;
+  top: 0px;
+  transform: translateY(-10px);
+}
+nav ul li:last-child a:after {
+  display: none;
+  top: 0px;
+  transform: translateY(10px);
+}
+nav ul li:last-child a:hover:before {
+  display: none;
+  opacity: 1;
+  transform: translateY(0px);
+}
+ul.topBotomBordersIn li {
+  display: none;
+  position: relative;
+}
+/*
 /* this thing of "box-sizing" always before "body" all about layout */
 * {
   box-sizing: border-box;
@@ -79,15 +108,15 @@ ul.topBotomBordersIn li{
   width: 100%
 }
 
-
 .image_bg {
   text-align: center;
   color: white;
 }
 
-
-.row {
-  margin: 0px 0; /* 25px top and bottom; 0 left and right */
+.row. {
+  margin: 30px 0;
+  padding: 0 0 25 px;
+  border-bottom: 1px solid #999;
 }
 
 .card_grid {
@@ -101,34 +130,40 @@ ul.topBotomBordersIn li{
   box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.15);
 }
 
-.experience_card img{
+.experience_card img {
   max-width: 100%;
   max-height: 100%;
   display: block;
 }
 
-.experience_card div{
+.experience_card div {
   padding: 1.5rem;
 }
 
-.experience_card div h2{
+.experience_card div h2 {
   margin: 0;
   color: #00AFB9;
 }
 
 .berlin-illustration {
-display: block;
-width: 50%;
-max-width:30%;
-height: auto;
-margin-left: auto;
-margin-right: auto;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  margin: 2em auto;
 }
 
 @keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
 }
 
 .sun {
@@ -138,10 +173,17 @@ margin-right: auto;
   animation-direction: alternate;
   animation-timing-function: linear;
 }
+
 @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
 }
+
 .cloud-front {
   animation-duration: 30s;
   animation-name: cloud-move;
@@ -149,10 +191,17 @@ margin-right: auto;
   animation-direction: alternate;
   animation-timing-function: linear;
 }
+
 @keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
 }
+
 .cloud-back {
   animation-duration: 34s;
   animation-name: cloud-move-reverse;
@@ -160,68 +209,76 @@ margin-right: auto;
   animation-direction: alternate;
   animation-timing-function: linear;
 }
+
 /* animation of "uxclashes"*/
-
-
 @keyframes fadeIn {
-  0% { opacity: 0;}
-  100% { opacity: 1;}
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .course_1 {
-animation-name: fadeIn;
-animation-duration: 0.5s;
-animation-timing-function: ease-in-out;
-visibility:  visible !important;
--webkit-animation-delay: 1s; /* Safari 4.0 - 8.0 */
-animation-delay: 1s;
-display: inline-block;
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  visibility: visible !important;
+  -webkit-animation-delay: 1s;
+  /* Safari 4.0 - 8.0 */
+  animation-delay: 1s;
+  display: inline-block;
 }
 
 .course_2 {
-animation-name: fadeIn;
-animation-duration: 0.5s;
-animation-timing-function: ease-in-out;
-visibility: visible !important;
--webkit-animation-delay: 2s; /* Safari 4.0 - 8.0 */
-animation-delay: 2s;
-display: inline-block;
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  visibility: visible !important;
+  -webkit-animation-delay: 2s;
+  /* Safari 4.0 - 8.0 */
+  animation-delay: 2s;
+  display: inline-block;
 }
 
 .course_10 {
-animation-name: fadeIn;
-animation-duration: 0.5s;
-animation-timing-function: ease-in-out;
-visibility: visible !important;
--webkit-animation-delay: 3s; /* Safari 4.0 - 8.0 */
-animation-delay: 3s;
-display: inline-block;
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  visibility: visible !important;
+  -webkit-animation-delay: 3s;
+  /* Safari 4.0 - 8.0 */
+  animation-delay: 3s;
+  display: inline-block;
 }
 
 /* animation of "uxclashes"*/
-
 /* end of all animations */
-
 .bold_text {
-    font-weight: 700;
+  font-weight: 700;
 }
+
+.looks-like-h3 {}
 
 #aboutbg {
   padding-top: 30px;
   text-align: center;
 }
 
-
 #experience_title {
   padding-top: 30px;
   padding-bottom: 20px;
   text-align: center;
 }
+
 #about_section {
   padding-top: 30px;
   padding-bottom: 40px;
   text-align: center;
 }
+
 #title_experiences {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -229,8 +286,8 @@ display: inline-block;
   color: #bf6d85;
 }
 
-
-#experiences .row { padding-bottom: 25px;
+#experiences .row {
+  padding-bottom: 25px;
   border-bottom: 1px solid #bf6d85;
   margin-bottom: 25px;
 }
@@ -238,52 +295,45 @@ display: inline-block;
 #hero h1 {
   padding-top: 20px;
   color: #f6b198;
-
 }
+
 #hero {
-    display: inline-block;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    text-align: center;
-    max-width: 1300px;
-
+  display: inline-block;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  max-width: 1300px;
 }
 
-#hero span{
+#hero span {
   display: block;
 }
 
-#aboutimage{
+#aboutimage {
   width: 100%
-}
-
-
-
-#frog {
-  display: flex;
-  justify-content: space-around;
 }
 
 #navigation {
   display: flex;
   align-items: center;
+  margin: 0;
 }
+
 
 #bixacora {
   padding-top: 30px;
   padding-bottom: 30px;
-  text-align:
-  center;
+  text-align:center;
   color: #ffffff;
   background-color: #bf6d85;
 }
-
 
 #aboutme {
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
-  color: #ffffff;;
+  color: #ffffff;
+  ;
   background-color: #bf6d85;
 }
 
@@ -291,10 +341,9 @@ display: inline-block;
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
-  color: #ffffff;;
+  color: #ffffff;
   background-color: #6c5c7a;
 }
-
 
 #copyright {
   padding-top: 2px;
@@ -304,52 +353,92 @@ display: inline-block;
   color: #bf6d85;
   background-color: #375d7c;
   background-size: cover;
-
 }
+
 #skillsandtools {
-    text-align: center;
-    background-color: #bf6d85;
-    color: #ffffff;
-    padding-top: 30px;
-    padding-bottom: 50px;
-    width: 100%
+  text-align: center;
+  background-color: #bf6d85;
+  color: #ffffff;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  width: 100%
 }
-
 
 .linkedin {
   max-width: 60px;
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
 .logo {
   max-width: 80px;
 }
+
 .uxlogo {
   max-width: 80px;
 }
 
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+.navtoggle.responsive nav {
+  padding: 10px 0 0;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+/*this one doesn´t work
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}*/
+/*instead I try next*/
+.navtoggle.responsive li:last-child  {
+  position: relative;
+}
+
+/*this one doesn´t work
+.navtoggle li .burger {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  color: #B5CE6F;
+}*/
 nav > ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
+nav>ul>li>a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 100px;
+  color: #ff4242;
+}
+
+nav>ul {
+  list-style-type: none;
+  padding: 0;
+}
+
 nav > ul > li {
   display: inline-block;
 }
-nav > ul > li > a {
-  padding: 0 15px;
-  text-transform: uppercase;
-  font-weight: 100px;
-  color: #383838;
-}
-nav > ul > li > img {
+
+nav>ul>li>img {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 100px;
   color: #383838;
 }
 
-
-body{
+body {
   background-color: #ffffff;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
@@ -400,24 +489,43 @@ h6 {
   line-height: 2;
 }
 
+h2 span.subheading {
+  font-family: "Poppins";
+  font-size: 0.575em;
+  font-weight: 600;
+  line-height: 2.35;
+  display: block;
+  text-transform: uppercase;
+  margin-top: 0.8em;
+}
+
+.section {
+  padding: 2em;
+  margin: 0 0 2em;
+}
+
 img {
   width: 100%;
 }
 
 a {
-  color: #f47382;/* no underlining */
+  color: #f47382;
+  /* no underlining */
   text-decoration: none;
 }
-a:visited { /* visited link */
+
+a:visited {
+  /* visited link */
   color: #bf6d85;
 }
+
 a:hover,
 a:focus {
-  font-weight:
-  color:
+  color: #f47382;
 }
 
-a:active { /* selected link */
+a:active {
+  /* selected link */
   color: #f47382;
 }
 
@@ -436,76 +544,32 @@ selector {
   margin: 0 auto;
 }
 
-
-
 #my_experiences h2 {
   margin-top: 2rem;
   text-align: center;
 }
 
-
-/* ================
-For different devides
-====================*/
-@media only screen and (min-width: 640px){
-header {
-  text-align: unset;
-  padding: 20px 0 13px;
-}
-nav {
-  width: auto;
-  float: right;
-  margin-top: 4px;
-}
-  main {
-    padding-top: 119px;
-  }
-}
-
-@media only screen and (min-width: 1024px){
-  .col-md-6 {
-    width: 50%;
-  }
-  .col-lg-7 {
-    width: 60%;
-  }
-  .col-lg-5 {
-  width: 40%;
-  }
-}
-
-@media only screen and (min-width: 1440px){
-  .col-md-6 {
-    width: 50%;
-  }
-}
-@media only screen and (min-width: 1920px){
-  .col-md-6 {
-    width: 50%;
-  }
-}
-
-[class*="col-"] {
-  float: left;
-  padding: 10px;
-}
-
-
 /* button rules always at the end of the file, otherwise it can be overwritten*/
 .button {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  display: inline-block;
+  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #9D6B6C;
-  color: #ff8080; /* needed to override the default link color */
+  color: #ff8080;
+  /* needed to override the default link color */
   font-weight: 400;
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #CFC9C6; /* width of the border, type, color */
+  border-bottom: 2px solid #CFC9C6;
+  /* width of the border, type, color */
   transition: 0.2s opacity;
 }
+
 .button:hover {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
 }
+
 .button:active {
   color: #ff8080;
 }
@@ -517,15 +581,16 @@ nav {
   font-weight: 300;
   border: 2px solid #ffffff;
 }
+
 .button.contact:hover {
   background-color: #bf6d85;
   color: #ffffff;
   border: 2px solid #bf6d85;
 }
+
 .button.contact:active {
   color: #bf6d85;
 }
-
 
 .button.experiences {
   background-color: #ffffff;
@@ -534,16 +599,16 @@ nav {
   font-weight: 300;
   border: 2px solid #bf6d85;
 }
+
 .button.experiences:hover {
   background-color: #6c5c7a;
   color: #ff8080;
   border: 2px solid #6c5c7a;
 }
+
 .button.experiences:active {
   color: #bf6d85;
 }
-
-
 
 .button.curious {
   background-color: #bf6d85;
@@ -552,11 +617,81 @@ nav {
   font-weight: 300;
   border: 2px solid #ffffff;
 }
+
 .button.curious:hover {
   background-color: #6c5c7a;
   color: #ff8080;
   border: 2px solid #6c5c7a;
 }
+
 .button.curious:active {
   color: #9D6B6C;
+}
+
+/* ================
+For different devides
+====================*/
+[class*="col-"] {
+  float: left;
+  padding: 10px;
+}
+
+@media only screen and (min-width: 640px) {
+
+  /*main {
+    padding-top: 119px;
+  }*/
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+
+}
+@media only screen and (min-width: 775px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+    flex-direction: column;
+  }
+  nav > ul {
+  margin: 1em 0;
+}
+
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+  .navtoggle li:last-child {
+  display: none;
+}
+  }
+
+@media only screen and (min-width: 1024px) {
+
+  .col-lg-7 {
+    width: 60%;
+  }
+
+  .col-lg-5 {
+    width: 40%;
+  }
+}
+
+
+@media only screen and (min-width: 1440px) {}
+}
+
+@media only screen and (min-width: 1920px) {}
+}
+
+element.style {
+  list-style-type: none;
+  padding: 0;
 }
