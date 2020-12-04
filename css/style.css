@@ -7,12 +7,28 @@
   For text in white bg:
 Grey: #383838
 */
+
+* {
+  box-sizing: border-box;
+}
+
 header {
   background-color: #ffffff;
   text-align: unset;
   width: 100%;
   box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.15);
   position: fixed;
+  background-color: #ffffff;
+}
+
+main {
+  padding-top: 177px;
+  background-image: linear-gradient(to bottom right, #ffafbd, #ffc3a0);
+}
+
+.bg_random {
+  padding-top: 177px;
+  background-image: linear-gradient(to bottom right, #ffc3a0, #ffafbd);
 }
 
 .center {
@@ -22,78 +38,6 @@ header {
 .padding {
   padding-top: 100px;
   padding-bottom: 40px;
-}
-
-main {
-  padding-top: 177px;
-}
-
-/* Top and Bottom borders come in */
-ul.topBotomBordersIn a:before, ul.topBotomBordersIn a:after {
-  position: absolute;
-  left: 0px;
-  width: 100%;
-  height: 2px;
-  background: #9D6B6C;
-  content: "";
-  opacity: 0;
-  transition: all 0.3s;
-}
-
-ul.topBotomBordersIn a:before {
-  top: 0px;
-  transform: translateY(-10px);
-}
-
-ul.topBotomBordersIn a:after {
-  bottom: 0px;
-  transform: translateY(10px);
-}
-
-ul.topBotomBordersIn a:hover:before, ul.topBotomBordersIn a:hover:after {
-  opacity: 1;
-  transform: translateY(0px);
-}
-
-ul.topBotomBordersIn li {
-  position: relative;
-}
-
-/*nav ul li:last-child a:before {
-  display: none;
-  position: absolute;
-  left: 0px;
-  width: 100%;
-  height: 2px;
-  background: #9D6B6C;
-  content: "";
-  opacity: 0;
-  transition: all 0.3s
-}
-
-nav ul li:last-child a:before {
-  display: none;
-  top: 0px;
-  transform: translateY(-10px);
-}
-nav ul li:last-child a:after {
-  display: none;
-  top: 0px;
-  transform: translateY(10px);
-}
-nav ul li:last-child a:hover:before {
-  display: none;
-  opacity: 1;
-  transform: translateY(0px);
-}
-ul.topBotomBordersIn li {
-  display: none;
-  position: relative;
-}
-/*
-/* this thing of "box-sizing" always before "body" all about layout */
-* {
-  box-sizing: border-box;
 }
 
 /* Layout styling */
@@ -107,16 +51,27 @@ ul.topBotomBordersIn li {
 .full-width {
   width: 100%
 }
+mark {
+  background-color: #f47382;
+  color: #ffffff;
+}
+
 
 .image_bg {
   text-align: center;
   color: white;
 }
 
-.row. {
+.row_experiences {
   margin: 30px 0;
   padding: 0 0 25 px;
-  border-bottom: 1px solid #999;
+  border-bottom: 1px solid #9D6B6C;
+}
+
+.row_experiences::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 .card_grid {
@@ -143,6 +98,44 @@ ul.topBotomBordersIn li {
 .experience_card div h2 {
   margin: 0;
   color: #00AFB9;
+}
+/*parallax effect*/
+.banner {
+  height: 500px;
+  width: 100%;
+  background: #ededed url("../img/5.about/dmirty-fisenko-HL6gzlxnMjM-unsplash.jpg") no-repeat center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*.banner > *:not(.skiing) {
+  padding: 5px 15px;
+}*/
+
+.banner-title {
+  font-size: 2.5em;
+}
+
+.content p + p {
+  margin-top: 25px;
+}
+/*--> end of parallax effect <--*/
+.hooked {
+  max-height:200px;
+}
+.abouttext {
+  /*color: #9D6B6C;*/
+}
+
+.borderparagrah {
+outline: #ffffff;
+color: #f47382;
+outline-style: dotted;
+max-width: 800px;
+margin: auto;
+padding: 20px;
 }
 
 .berlin-illustration {
@@ -178,7 +171,6 @@ ul.topBotomBordersIn li {
   from {
     transform: translate(0, 50px);
   }
-
   to {
     transform: translate(200px, 50px);
   }
@@ -196,7 +188,6 @@ ul.topBotomBordersIn li {
   from {
     transform: translate(446px, 48px);
   }
-
   to {
     transform: translate(100px, 48px);
   }
@@ -262,9 +253,10 @@ ul.topBotomBordersIn li {
 
 .looks-like-h3 {}
 
-#aboutbg {
+#aboutbixacorabg {
   padding-top: 30px;
   text-align: center;
+  color: #ffffff;
 }
 
 #experience_title {
@@ -273,42 +265,33 @@ ul.topBotomBordersIn li {
   text-align: center;
 }
 
-#about_section {
-  padding-top: 30px;
-  padding-bottom: 40px;
-  text-align: center;
-}
-
 #title_experiences {
-  padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
-  color: #bf6d85;
+  color: #fffbd5;
 }
 
-#experiences .row {
-  padding-bottom: 25px;
-  border-bottom: 1px solid #bf6d85;
-  margin-bottom: 25px;
-}
 
 #hero h1 {
   padding-top: 20px;
-  color: #f6b198;
+  color: #fffbd5;
 }
 
 #hero {
-  display: inline-block;
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
-  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #hero span {
   display: block;
 }
 
+#getintouch span {
+  display: block;
+}
 #aboutimage {
   width: 100%
 }
@@ -317,6 +300,7 @@ ul.topBotomBordersIn li {
   display: flex;
   align-items: center;
   margin: 0;
+  flex-direction: column;
 }
 
 
@@ -325,24 +309,23 @@ ul.topBotomBordersIn li {
   padding-bottom: 30px;
   text-align:center;
   color: #ffffff;
-  background-color: #bf6d85;
+  border: 15px solid white;
+  /*background-color: #bf6d85;*/
 }
 
 #aboutme {
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
-  color: #ffffff;
-  ;
-  background-color: #bf6d85;
+  color: #ff3333;
 }
 
 #getintouch {
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
-  color: #ffffff;
-  background-color: #6c5c7a;
+  color: #bf6d85;
+  background-color: #ffffff;
 }
 
 #copyright {
@@ -350,10 +333,10 @@ ul.topBotomBordersIn li {
   padding-bottom: 2px;
   font-size: 0.8em;
   text-align: center;
-  color: #bf6d85;
-  background-color: #375d7c;
-  background-size: cover;
+  color: #ffffff;
+  background-image: linear-gradient(to bottom right, #ffafbd, #ffc3a0);
 }
+
 
 #skillsandtools {
   text-align: center;
@@ -371,16 +354,28 @@ ul.topBotomBordersIn li {
 }
 
 .logo {
-  max-width: 80px;
+  max-width: 45px;
 }
 
 .uxlogo {
-  max-width: 80px;
+  max-width: 45px;
 }
 
 .navtoggle li:not(:last-child) {
   display: none;
 }
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .burger {
+  position: absolute;
+  right: 0;
+  top: 15px;
+  font-size: 20px;
+}
+
 .navtoggle.responsive nav {
   padding: 10px 0 0;
 }
@@ -393,23 +388,7 @@ ul.topBotomBordersIn li {
 .navtoggle.responsive li:last-child  {
   padding: 0 0 10px;
 }
-/*this one doesn´t work
-.navtoggle, .navtoggle.responsive {
-  position: relative;
-}*/
-/*instead I try next*/
-.navtoggle.responsive li:last-child  {
-  position: relative;
-}
 
-/*this one doesn´t work
-.navtoggle li .burger {
-  position: absolute;
-  right: 0;
-  top: 2px;
-  font-size: 20px;
-  color: #B5CE6F;
-}*/
 nav > ul {
   list-style-type: none;
   padding: 0;
@@ -419,7 +398,7 @@ nav>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 100px;
-  color: #ff4242;
+  color: #bf6d85;
 }
 
 nav>ul {
@@ -435,43 +414,42 @@ nav>ul>li>img {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 100px;
-  color: #383838;
 }
 
 body {
   background-color: #ffffff;
   font-family: "Roboto", sans-serif;
-  font-size: 18px;
+  font-size: 19px;
   font-weight: 300;
   line-height: 29px;
-  color: #375d7c;
+  color: #ffffff;
 }
 
 h1 {
   font-family: "Poppins";
   font-size: 2.5em;
-  font-weight: 600;
+  font-weight: 200;
   line-height: 1.2;
 }
 
 h2 {
   font-family: "Poppins";
-  font-size: 2em;
+  font-size: 1.8em;
   font-weight: 200;
   line-height: 1.2;
 }
 
 h3 {
   font-family: "Poppins";
-  font-size: 1.9em;
-  font-weight: 600;
+  font-size: 1.8em;
+  font-weight: 500;
   line-height: 1.4;
 }
 
 h4 {
   font-family: "Roboto";
-  font-size: 1.5em;
-  font-weight: 300;
+  font-size: 1.6em;
+  font-weight: 500;
   line-height: 2.3;
 }
 
@@ -499,8 +477,17 @@ h2 span.subheading {
   margin-top: 0.8em;
 }
 
+.abouttext {
+  font-family: "Poppins";
+  font-size: 1.4em;
+  font-weight: 200;
+  line-height: 1.4;
+  display: block;
+  margin-top: 0.8em;
+}
+
 .section {
-  padding: 2em;
+  padding: 2em 0;
   margin: 0 0 2em;
 }
 
@@ -534,11 +521,6 @@ a:active {
   font-style: italic;
 }
 
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
 
 selector {
   margin: 0 auto;
@@ -552,15 +534,11 @@ selector {
 /* button rules always at the end of the file, otherwise it can be overwritten*/
 .button {
   display: inline-block;
-  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #9D6B6C;
-  color: #ff8080;
   /* needed to override the default link color */
   font-weight: 400;
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #CFC9C6;
   /* width of the border, type, color */
   transition: 0.2s opacity;
 }
@@ -575,35 +553,34 @@ selector {
 }
 
 .button.contact {
-  background-color: #6c5c7a;
+  background-color: #bf6d85;
   color: #ffffff;
   text-transform: uppercase;
   font-weight: 300;
-  border: 2px solid #ffffff;
+  border: 2px solid #bf6d85;
 }
 
 .button.contact:hover {
-  background-color: #bf6d85;
+  background-image: linear-gradient(to bottom right, #ffafbd, #ffc3a0);
   color: #ffffff;
-  border: 2px solid #bf6d85;
+  border: 2px solid #ffafbd;
 }
 
 .button.contact:active {
-  color: #bf6d85;
+  color: #ffafbd;
 }
 
 .button.experiences {
-  background-color: #ffffff;
-  color: #bf6d85;
+  background-image: linear-gradient(to bottom right, #ffafbd, #ffc3a0);
+  color: #ffffff;
   text-transform: uppercase;
   font-weight: 300;
-  border: 2px solid #bf6d85;
+    border: 2px solid #ffffff;
 }
 
 .button.experiences:hover {
-  background-color: #6c5c7a;
-  color: #ff8080;
-  border: 2px solid #6c5c7a;
+  color: #6c5c7a;
+
 }
 
 .button.experiences:active {
@@ -611,7 +588,7 @@ selector {
 }
 
 .button.curious {
-  background-color: #bf6d85;
+  background-image: linear-gradient(to bottom right, #ffafbd, #ffc3a0);
   color: #ffffff;
   text-transform: uppercase;
   font-weight: 300;
@@ -619,9 +596,9 @@ selector {
 }
 
 .button.curious:hover {
-  background-color: #6c5c7a;
-  color: #ff8080;
-  border: 2px solid #6c5c7a;
+  background-image: linear-gradient(to bottom right, #bf6d85, #6c5c7a);
+  color: #ffffff;
+  border: 2px solid #bf6d85;
 }
 
 .button.curious:active {
@@ -637,41 +614,79 @@ For different devides
 }
 
 @media only screen and (min-width: 640px) {
-
-  /*main {
-    padding-top: 119px;
-  }*/
-
+  main {
+    padding-top: 80px;
+}
   .col-md-6 {
     width: 50%;
   }
+  #title_experiences {
+    padding-top: 10px;
+  }
 
-
+ .skiing {
+   right: 20px;
+   max-width: 100px;
+ }
 }
-@media only screen and (min-width: 775px) {
+
+@media only screen and (min-width: 800px) {
   header {
     text-align: unset;
     padding: 20px 0 13px;
   }
-
   nav {
     width: auto;
     float: right;
-    margin-top: 4px;
-    flex-direction: column;
+    margin-top: 0px;
+    flex-direction: row;
   }
+  #navigation {
+flex-direction: row;
+}
   nav > ul {
   margin: 1em 0;
 }
-
-
   .navtoggle li:not(:last-child) {
     display: inline-block;
   }
   .navtoggle li:last-child {
   display: none;
 }
-  }
+.logo {
+  max-width: 65px;
+}
+
+/* Top and Bottom borders come in */
+ul.topBotomBordersIn li:not(.no-animation) a:before, ul.topBotomBordersIn li:not(.no-animation) a:after {
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  height: 1px;
+  background: #fcd2c5;
+  content: "";
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+ul.topBotomBordersIn li:not(.no-animation) a:before {
+  top: 0px;
+  transform: translateY(-10px);
+}
+
+ul.topBotomBordersIn li:not(.no-animation) a:after {
+  bottom: 0px;
+  transform: translateY(10px);
+}
+
+ul.topBotomBordersIn li:not(.no-animation) a:hover:before, ul.topBotomBordersIn li:not(.no-animation) a:hover:after {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+ul.topBotomBordersIn li {
+  position: relative;
+}
 
 @media only screen and (min-width: 1024px) {
 
@@ -685,10 +700,10 @@ For different devides
 }
 
 
-@media only screen and (min-width: 1440px) {}
+@media only screen and (min-width: 1440px) {
 }
 
-@media only screen and (min-width: 1920px) {}
+@media only screen and (min-width: 1920px) {
 }
 
 element.style {
