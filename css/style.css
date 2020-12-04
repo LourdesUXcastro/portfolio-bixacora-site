@@ -17,12 +17,13 @@ header {
   text-align: unset;
   width: 100%;
   box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.15);
+  padding: 5px 0;
   position: fixed;
   background-color: #ffffff;
 }
 
 main {
-  padding-top: 177px;
+  padding-top: 54px;
   background-image: linear-gradient(to bottom right, #ffafbd, #ffc3a0);
 }
 
@@ -56,6 +57,9 @@ mark {
   color: #ffffff;
 }
 
+.no_line_height {
+  line-height: 0;
+}
 
 .image_bg {
   text-align: center;
@@ -68,7 +72,7 @@ mark {
   border-bottom: 1px solid #9D6B6C;
 }
 
-.row_experiences::after {
+.row_experiences::after, .row::after {
   content: "";
   clear: both;
   display: table;
@@ -213,6 +217,7 @@ padding: 20px;
 }
 
 .course_1 {
+  opacity: 0;
   animation-name: fadeIn;
   animation-duration: 0.5s;
   animation-timing-function: ease-in-out;
@@ -255,6 +260,7 @@ padding: 20px;
 
 #aboutbixacorabg {
   padding-top: 30px;
+  padding-bottom: 30px;
   text-align: center;
   color: #ffffff;
 }
@@ -275,6 +281,7 @@ padding: 20px;
 #hero h1 {
   padding-top: 20px;
   color: #fffbd5;
+  margin-top: 0;
 }
 
 #hero {
@@ -339,12 +346,19 @@ padding: 20px;
 
 
 #skillsandtools {
-  text-align: center;
   background-color: #bf6d85;
   color: #ffffff;
   padding-top: 30px;
   padding-bottom: 50px;
   width: 100%
+}
+#skillsandtools ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#skillsandtools .column {
+text-align: center;
 }
 
 .linkedin {
@@ -372,7 +386,7 @@ padding: 20px;
 .navtoggle li .burger {
   position: absolute;
   right: 0;
-  top: 15px;
+  top: 10px;
   font-size: 20px;
 }
 
@@ -387,6 +401,11 @@ padding: 20px;
 
 .navtoggle.responsive li:last-child  {
   padding: 0 0 10px;
+}
+.navtoggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 nav > ul {
@@ -604,6 +623,9 @@ selector {
 .button.curious:active {
   color: #9D6B6C;
 }
+.col-12 {
+  width: 100%;
+}
 
 /* ================
 For different devides
@@ -615,7 +637,7 @@ For different devides
 
 @media only screen and (min-width: 640px) {
   main {
-    padding-top: 80px;
+    padding-top: 97px;
 }
   .col-md-6 {
     width: 50%;

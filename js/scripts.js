@@ -7,13 +7,3 @@ function menuToggle() {
     x.className = 'navtoggle';
   }
 }
-const parallaxEls = document.querySelectorAll("[data-speed]");
-
-window.addEventListener("scroll", scrollHandler);
-
-function scrollHandler() {
-  for (const parallaxEl of parallaxEls) {
-    const direction = parallaxEl.dataset.direction == "up" ? "-" : "";
-    const transformY = this.pageYOffset * parallaxEl.dataset.speed;
-  }
-}
