@@ -7,7 +7,6 @@
   For text in white bg:
 Grey: #383838
 */
-
 * {
   box-sizing: border-box;
 }
@@ -52,6 +51,7 @@ main {
 .full-width {
   width: 100%
 }
+
 mark {
   background-color: #f47382;
   color: #ffffff;
@@ -103,43 +103,40 @@ mark {
   margin: 0;
   color: #00AFB9;
 }
+
 /*parallax effect*/
-.banner {
+
+#parallax {
+  background: url("../img/5.about/dmirty-fisenko-HL6gzlxnMjM-unsplash.jpg");
   height: 500px;
-  width: 100%;
-  background: #ededed url("../img/5.about/dmirty-fisenko-HL6gzlxnMjM-unsplash.jpg") no-repeat center/cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  background-attachment: fixed;
+background-position: bottom;
+background-repeat: no-repeat;
+background-size: cover;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
 }
 
-/*.banner > *:not(.skiing) {
-  padding: 5px 15px;
-}*/
-
-.banner-title {
-  font-size: 2.5em;
-}
-
-.content p + p {
-  margin-top: 25px;
-}
 /*--> end of parallax effect <--*/
+
 .hooked {
-  max-height:200px;
+  max-height: 200px;
 }
+
 .abouttext {
   /*color: #9D6B6C;*/
 }
 
 .borderparagrah {
-outline: #ffffff;
-color: #f47382;
-outline-style: dotted;
-max-width: 800px;
-margin: auto;
-padding: 20px;
+  outline: #ffffff;
+  color: #f47382;
+  outline-style: dotted;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
 }
 
 .berlin-illustration {
@@ -175,6 +172,7 @@ padding: 20px;
   from {
     transform: translate(0, 50px);
   }
+
   to {
     transform: translate(200px, 50px);
   }
@@ -192,6 +190,7 @@ padding: 20px;
   from {
     transform: translate(446px, 48px);
   }
+
   to {
     transform: translate(100px, 48px);
   }
@@ -215,40 +214,81 @@ padding: 20px;
     opacity: 1;
   }
 }
-
-.course_1 {
+#course_1 {
   opacity: 0;
   animation-name: fadeIn;
   animation-duration: 0.5s;
-  animation-timing-function: ease-in-out;
-  visibility: visible !important;
-  -webkit-animation-delay: 1s;
-  /* Safari 4.0 - 8.0 */
-  animation-delay: 1s;
+  animation-timing-function: ease;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+  animation-fill-mode: forwards;
+  display: inline-block;
+}
+#course_2 {
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  display: inline-block;
+}
+#course_3 {
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  animation-fill-mode: forwards;
+  display: inline-block;
+}
+#course_5 {
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+  -webkit-animation-delay: 1.2s;
+  animation-delay: 1.2s;
+  animation-fill-mode: forwards;
+  display: inline-block;
+}
+#course_8 {
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
   display: inline-block;
 }
 
-.course_2 {
+
+#course_4, #course_10, #course_11, #course_6, #course_7 {
+  opacity: 0;
   animation-name: fadeIn;
   animation-duration: 0.5s;
-  animation-timing-function: ease-in-out;
-  visibility: visible !important;
+  animation-timing-function: ease;
   -webkit-animation-delay: 2s;
-  /* Safari 4.0 - 8.0 */
   animation-delay: 2s;
+  animation-fill-mode: forwards;
   display: inline-block;
 }
 
-.course_10 {
+#course_9, #course_12, #course_13, #course_14, #course_15, #course_16 {
+  opacity: 0;
   animation-name: fadeIn;
   animation-duration: 0.5s;
-  animation-timing-function: ease-in-out;
-  visibility: visible !important;
-  -webkit-animation-delay: 3s;
-  /* Safari 4.0 - 8.0 */
-  animation-delay: 3s;
+  animation-timing-function: ease;
+  -webkit-animation-delay: 2.5s;
+  animation-delay: 2.5s;
+  animation-fill-mode: forwards;
   display: inline-block;
 }
+
+
 
 /* animation of "uxclashes"*/
 /* end of all animations */
@@ -277,7 +317,6 @@ padding: 20px;
   color: #fffbd5;
 }
 
-
 #hero h1 {
   padding-top: 20px;
   color: #fffbd5;
@@ -299,6 +338,7 @@ padding: 20px;
 #getintouch span {
   display: block;
 }
+
 #aboutimage {
   width: 100%
 }
@@ -310,11 +350,10 @@ padding: 20px;
   flex-direction: column;
 }
 
-
 #bixacora {
   padding-top: 30px;
   padding-bottom: 30px;
-  text-align:center;
+  text-align: center;
   color: #ffffff;
   border: 15px solid white;
   /*background-color: #bf6d85;*/
@@ -344,7 +383,6 @@ padding: 20px;
   background-image: linear-gradient(to bottom right, #ffafbd, #ffc3a0);
 }
 
-
 #skillsandtools {
   background-color: #bf6d85;
   color: #ffffff;
@@ -352,13 +390,14 @@ padding: 20px;
   padding-bottom: 50px;
   width: 100%
 }
+
 #skillsandtools ul {
   list-style-type: none;
   padding: 0;
 }
 
 #skillsandtools .column {
-text-align: center;
+  text-align: center;
 }
 
 .linkedin {
@@ -394,29 +433,26 @@ text-align: center;
   padding: 10px 0 0;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
   padding: 10px 0;
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
-.navtoggle {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
 
-nav > ul {
+nav>ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
+
 nav>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
-  font-weight: 100px;
+  font-weight: 300;
+  font-size: 0.8em;
   color: #bf6d85;
 }
 
@@ -425,7 +461,7 @@ nav>ul {
   padding: 0;
 }
 
-nav > ul > li {
+nav>ul>li {
   display: inline-block;
 }
 
@@ -540,7 +576,6 @@ a:active {
   font-style: italic;
 }
 
-
 selector {
   margin: 0 auto;
 }
@@ -594,12 +629,11 @@ selector {
   color: #ffffff;
   text-transform: uppercase;
   font-weight: 300;
-    border: 2px solid #ffffff;
+  border: 2px solid #ffffff;
 }
 
 .button.experiences:hover {
   color: #6c5c7a;
-
 }
 
 .button.experiences:active {
@@ -623,6 +657,7 @@ selector {
 .button.curious:active {
   color: #9D6B6C;
 }
+
 .col-12 {
   width: 100%;
 }
@@ -635,100 +670,110 @@ For different devides
   padding: 10px;
 }
 
+
+
 @media only screen and (min-width: 640px) {
   main {
     padding-top: 97px;
-}
+  }
+
   .col-md-6 {
     width: 50%;
   }
+
   #title_experiences {
     padding-top: 10px;
   }
 
- .skiing {
-   right: 20px;
-   max-width: 100px;
- }
-}
-
-@media only screen and (min-width: 800px) {
+  .skiing {
+    right: 20px;
+    max-width: 100px;
+  }
   header {
     text-align: unset;
     padding: 20px 0 13px;
   }
+
   nav {
     width: auto;
     float: right;
     margin-top: 0px;
     flex-direction: row;
   }
+
   #navigation {
-flex-direction: row;
-}
-  nav > ul {
-  margin: 1em 0;
-}
+    flex-direction: row;
+  }
+
+  nav>ul {
+    margin: 1em 0;
+  }
+
   .navtoggle li:not(:last-child) {
     display: inline-block;
   }
+
   .navtoggle li:last-child {
-  display: none;
-}
-.logo {
-  max-width: 65px;
-}
-
-/* Top and Bottom borders come in */
-ul.topBotomBordersIn li:not(.no-animation) a:before, ul.topBotomBordersIn li:not(.no-animation) a:after {
-  position: absolute;
-  left: 0px;
-  width: 100%;
-  height: 1px;
-  background: #fcd2c5;
-  content: "";
-  opacity: 0;
-  transition: all 0.3s;
-}
-
-ul.topBotomBordersIn li:not(.no-animation) a:before {
-  top: 0px;
-  transform: translateY(-10px);
-}
-
-ul.topBotomBordersIn li:not(.no-animation) a:after {
-  bottom: 0px;
-  transform: translateY(10px);
-}
-
-ul.topBotomBordersIn li:not(.no-animation) a:hover:before, ul.topBotomBordersIn li:not(.no-animation) a:hover:after {
-  opacity: 1;
-  transform: translateY(0px);
-}
-
-ul.topBotomBordersIn li {
-  position: relative;
-}
-
-@media only screen and (min-width: 1024px) {
-
-  .col-lg-7 {
-    width: 60%;
+    display: none;
   }
 
-  .col-lg-5 {
-    width: 40%;
+  .logo {
+    max-width: 65px;
+  }
+
+  .navtoggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  /* Top and Bottom borders come in */
+  ul.topBotomBordersIn li:not(.no-animation) a:before, ul.topBotomBordersIn li:not(.no-animation) a:after {
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 1px;
+    background: #fcd2c5;
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+  }
+
+  ul.topBotomBordersIn li:not(.no-animation) a:before {
+    top: 0px;
+    transform: translateY(-10px);
+  }
+
+  ul.topBotomBordersIn li:not(.no-animation) a:after {
+    bottom: 0px;
+    transform: translateY(10px);
+  }
+
+  ul.topBotomBordersIn li:not(.no-animation) a:hover:before, ul.topBotomBordersIn li:not(.no-animation) a:hover:after {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
+  ul.topBotomBordersIn li {
+    position: relative;
   }
 }
 
+  @media only screen and (min-width: 1024px) {
+    .col-lg-7 {
+      width: 60%;
+    }
 
-@media only screen and (min-width: 1440px) {
-}
+    .col-lg-5 {
+      width: 40%;
+    }
+  }
 
-@media only screen and (min-width: 1920px) {
-}
+  @media only screen and (min-width: 1440px) {}
 
-element.style {
-  list-style-type: none;
-  padding: 0;
-}
+  @media only screen and (min-width: 1920px) {}
+
+  element.style {
+    list-style-type: none;
+    padding: 0;
+  }
