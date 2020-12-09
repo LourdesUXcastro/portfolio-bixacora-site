@@ -68,8 +68,12 @@ mark {
 
 .row_experiences {
   margin: 30px 0;
-  padding: 0 0 25 px;
+  padding: 0 0 25px;
   border-bottom: 1px solid #9D6B6C;
+}
+
+.row_experiences:last-child {
+  border-bottom: none;
 }
 
 .row_experiences::after, .row::after {
@@ -89,13 +93,15 @@ mark {
   box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.15);
   background-color: white;
   color: #9D6B6C;
+  display: flex;
+  flex-direction: column;
 }
 
-.experience_card img {
+/*.experience_card img {
   max-width: 100%;
   max-height: 100%;
   display: block;
-}
+}*/
 
 .experience_card div {
   padding: 1.5rem;
@@ -515,6 +521,24 @@ mark {
   max-width: 45px;
 }
 
+.goback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.goback svg {
+  width: 35px;
+  margin-right: 20px;
+}
+.goback:hover svg .st0 {
+  fill: #bf6d85;
+}
+
+p.goback:hover {
+  color: #bf6d85;
+}
+
 .navtoggle li:not(:last-child) {
   display: none;
 }
@@ -755,6 +779,9 @@ selector {
 
 .button.experiences:active {
   color: #bf6d85;
+}
+.downbutton {
+  margin-top: auto;
 }
 
 .button.curious {

@@ -1,4 +1,5 @@
 console.log("Welcome to my Bixacora!");
+
 function menuToggle() {
   var x = document.getElementById('myNavtoggle');
   if (x.className === 'navtoggle') {
@@ -6,4 +7,8 @@ function menuToggle() {
   } else {
     x.className = 'navtoggle';
   }
+}
+
+function goBack() {
+  window.history.back();
 }
