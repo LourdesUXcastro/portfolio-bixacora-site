@@ -16,7 +16,7 @@ header {
   text-align: unset;
   width: 100%;
   box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.15);
-  padding: 5px 0;
+  padding: 15px 0;
   position: fixed;
   background-color: #ffffff;
 }
@@ -87,6 +87,8 @@ mark {
 
 .experience_card {
   box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.15);
+  background-color: white;
+  color: #9D6B6C;
 }
 
 .experience_card img {
@@ -97,6 +99,7 @@ mark {
 
 .experience_card div {
   padding: 1.5rem;
+  padding-top: 0;
 }
 
 .experience_card div h2 {
@@ -105,23 +108,21 @@ mark {
 }
 
 /*parallax effect*/
-
 #parallax {
   background: url("../img/5.about/dmirty-fisenko-HL6gzlxnMjM-unsplash.jpg");
-  height: 500px;
+  height: 700px;
   background-attachment: fixed;
-background-position: bottom;
-background-repeat: no-repeat;
-background-size: cover;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-text-align: center;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 /*--> end of parallax effect <--*/
-
 .hooked {
   max-height: 200px;
 }
@@ -131,9 +132,7 @@ text-align: center;
 }
 
 .borderparagrah {
-  outline: #ffffff;
-  color: #f47382;
-  outline-style: dotted;
+  background-color: rgba(50, 50, 50, 0.3);
   max-width: 800px;
   margin: auto;
   padding: 20px;
@@ -148,7 +147,7 @@ text-align: center;
 
 @keyframes color-change {
   0% {
-    fill: #edc655;
+    fill: #FCE8E3;
   }
 
   50% {
@@ -156,12 +155,12 @@ text-align: center;
   }
 
   100% {
-    fill: #f76414;
+    fill: #F47382;
   }
 }
 
 .sun {
-  animation-duration: 4s;
+  animation-duration: 5s;
   animation-name: color-change;
   animation-iteration-count: infinite;
   animation-direction: alternate;
@@ -205,6 +204,97 @@ text-align: center;
 }
 
 /* animation of "uxclashes"*/
+/* animation of "mourning"*/
+@keyframes bubble {
+  from {
+    transform: translate(0px, 20px);
+  }
+
+  to {
+    transform: translate(20px, 0px);
+  }
+}
+
+.groupbubble2 {
+  animation-duration: 5s;
+  animation-name: bubble;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+.groupbubble3 {
+  animation-duration: 4s;
+  animation-name: bubble;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes bubble1 {
+  from {
+    transform: translate(0px, 20px);
+  }
+
+  to {
+    transform: translate(-20px, 0px);
+  }
+}
+
+.groupbubble1 {
+  animation-duration: 3s;
+  animation-name: bubble1;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+.circle4 {
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+  display: inline-block;
+}
+
+.circle3 {
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  -webkit-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+  animation-fill-mode: forwards;
+  display: inline-block;
+}
+
+.circle2 {
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  -webkit-animation-delay: 1.2s;
+  animation-delay: 1.2s;
+  animation-fill-mode: forwards;
+  display: inline-block;
+}
+
+.circle1 {
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  -webkit-animation-delay: 1.7s;
+  animation-delay: 1.7s;
+  animation-fill-mode: forwards;
+  display: inline-block;
+}
+
+/* end of animation of "mourning"*/
+/* animation of "svg ux clashes"*/
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -214,6 +304,7 @@ text-align: center;
     opacity: 1;
   }
 }
+
 #course_1 {
   opacity: 0;
   animation-name: fadeIn;
@@ -224,6 +315,7 @@ text-align: center;
   animation-fill-mode: forwards;
   display: inline-block;
 }
+
 #course_2 {
   opacity: 0;
   animation-name: fadeIn;
@@ -234,6 +326,7 @@ text-align: center;
   animation-fill-mode: forwards;
   display: inline-block;
 }
+
 #course_3 {
   opacity: 0;
   animation-name: fadeIn;
@@ -244,6 +337,7 @@ text-align: center;
   animation-fill-mode: forwards;
   display: inline-block;
 }
+
 #course_5 {
   opacity: 0;
   animation-name: fadeIn;
@@ -254,6 +348,7 @@ text-align: center;
   animation-fill-mode: forwards;
   display: inline-block;
 }
+
 #course_8 {
   opacity: 0;
   animation-name: fadeIn;
@@ -264,7 +359,6 @@ text-align: center;
   animation-fill-mode: forwards;
   display: inline-block;
 }
-
 
 #course_4, #course_10, #course_11, #course_6, #course_7 {
   opacity: 0;
@@ -287,8 +381,6 @@ text-align: center;
   animation-fill-mode: forwards;
   display: inline-block;
 }
-
-
 
 /* animation of "uxclashes"*/
 /* end of all animations */
@@ -335,6 +427,10 @@ text-align: center;
   display: block;
 }
 
+#parallax span {
+  display: block;
+}
+
 #getintouch span {
   display: block;
 }
@@ -355,8 +451,13 @@ text-align: center;
   padding-bottom: 30px;
   text-align: center;
   color: #ffffff;
-  border: 15px solid white;
+  /*border: 15px solid white;*/
   /*background-color: #bf6d85;*/
+}
+
+#bixacorabox {
+  border: 15px solid white;
+  /*background-color: rgba(0, 0, 0, 0.1);*/
 }
 
 #aboutme {
@@ -407,7 +508,7 @@ text-align: center;
 }
 
 .logo {
-  max-width: 45px;
+  max-width: 150px;
 }
 
 .uxlogo {
@@ -425,7 +526,7 @@ text-align: center;
 .navtoggle li .burger {
   position: absolute;
   right: 0;
-  top: 10px;
+  top: 5px;
   font-size: 20px;
 }
 
@@ -440,6 +541,10 @@ text-align: center;
 
 .navtoggle.responsive li:last-child {
   padding: 0 0 10px;
+}
+
+.heightsvg {
+  max-height: 50%;
 }
 
 nav>ul {
@@ -539,6 +644,18 @@ h2 span.subheading {
   line-height: 1.4;
   display: block;
   margin-top: 0.8em;
+  outline-style: dotted;
+  outline color: #ffffff;
+  padding: 10px;
+}
+
+.borderabout {
+  outline-style: dotted;
+  outline: #ffffff;
+}
+
+.minilogo {
+  max-width: 30px;
 }
 
 .section {
@@ -633,7 +750,7 @@ selector {
 }
 
 .button.experiences:hover {
-  color: #6c5c7a;
+  color: #9D6B6C;
 }
 
 .button.experiences:active {
@@ -646,12 +763,14 @@ selector {
   text-transform: uppercase;
   font-weight: 300;
   border: 2px solid #ffffff;
+  margin-bottom: 25px;
 }
 
 .button.curious:hover {
   background-image: linear-gradient(to bottom right, #bf6d85, #6c5c7a);
   color: #ffffff;
   border: 2px solid #bf6d85;
+  margin-bottom: 25px;
 }
 
 .button.curious:active {
@@ -670,8 +789,6 @@ For different devides
   padding: 10px;
 }
 
-
-
 @media only screen and (min-width: 640px) {
   main {
     padding-top: 97px;
@@ -689,6 +806,7 @@ For different devides
     right: 20px;
     max-width: 100px;
   }
+
   header {
     text-align: unset;
     padding: 20px 0 13px;
@@ -715,10 +833,6 @@ For different devides
 
   .navtoggle li:last-child {
     display: none;
-  }
-
-  .logo {
-    max-width: 65px;
   }
 
   .navtoggle {
@@ -759,21 +873,21 @@ For different devides
   }
 }
 
-  @media only screen and (min-width: 1024px) {
-    .col-lg-7 {
-      width: 60%;
-    }
-
-    .col-lg-5 {
-      width: 40%;
-    }
+@media only screen and (min-width: 1024px) {
+  .col-lg-7 {
+    width: 60%;
   }
 
-  @media only screen and (min-width: 1440px) {}
-
-  @media only screen and (min-width: 1920px) {}
-
-  element.style {
-    list-style-type: none;
-    padding: 0;
+  .col-lg-5 {
+    width: 40%;
   }
+}
+
+@media only screen and (min-width: 1440px) {}
+
+@media only screen and (min-width: 1920px) {}
+
+element.style {
+  list-style-type: none;
+  padding: 0;
+}
