@@ -516,7 +516,7 @@ mark {
 }
 
 .logo {
-  max-width: 150px;
+  width: 150px;
 }
 
 .uxlogo {
@@ -778,7 +778,7 @@ selector {
   color: #fff;
   text-transform: uppercase;
   font-weight: 300;
-  border: 2px solid #fff;
+  border: 2px solid #ffafbd;
 }
 
 .button.experiences:hover {
