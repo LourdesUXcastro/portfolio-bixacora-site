@@ -12,23 +12,29 @@ Grey: #383838
 }
 
 header {
-  background-color: #ffffff;
+  background-color: #fff;
   text-align: unset;
   width: 100%;
-  box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.15);
+  box-shadow: 0 5px 5px 0 rgba(50, 50, 50, 0.15);
   padding: 15px 0;
   position: fixed;
-  background-color: #ffffff;
 }
 
 main {
   padding-top: 54px;
+  background-image: linear-gradient(to bottom right, #f98ca3, #ff946e);
+}
+
+.bg_uxclash {
   background-image: linear-gradient(to bottom right, #ffafbd, #ffc3a0);
 }
 
 .bg_random {
-  padding-top: 177px;
-  background-image: linear-gradient(to bottom right, #ffc3a0, #ffafbd);
+  background-image: linear-gradient(to bottom right, #ffafbd, #ffc3a0);
+}
+
+.bg_mourning {
+  background-image: linear-gradient(to bottom right, #ffafbd, #ffc3a0);
 }
 
 .center {
@@ -49,12 +55,12 @@ main {
 }
 
 .full-width {
-  width: 100%
+  width: 100%;
 }
 
 mark {
-  background-color: #f47382;
-  color: #ffffff;
+  background-color: #bf6d85;
+  color: #fff;
 }
 
 .no_line_height {
@@ -69,14 +75,19 @@ mark {
 .row_experiences {
   margin: 30px 0;
   padding: 0 0 25px;
-  border-bottom: 1px solid #9D6B6C;
+  border-bottom: 1px solid #9d6b6c;
+}
+
+.nobottommargin {
+  margin-bottom: 0;
 }
 
 .row_experiences:last-child {
   border-bottom: none;
 }
 
-.row_experiences::after, .row::after {
+.row_experiences::after,
+.row::after {
   content: "";
   clear: both;
   display: table;
@@ -86,23 +97,22 @@ mark {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   gap: 3rem;
-  padding: 4rem 0rem 4rem 0rem;
+  padding: 4rem 0;
 }
 
 .experience_card {
-  box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.15);
+  box-shadow: 0 5px 5px 0 rgba(50, 50, 50, 0.15);
   background-color: white;
-  color: #9D6B6C;
+  color: #9d6b6c;
   display: flex;
   flex-direction: column;
 }
 
-/*.experience_card img {
+/* .experience_card img {
   max-width: 100%;
   max-height: 100%;
   display: block;
-}*/
-
+} */
 .experience_card div {
   padding: 1.5rem;
   padding-top: 0;
@@ -110,10 +120,10 @@ mark {
 
 .experience_card div h2 {
   margin: 0;
-  color: #00AFB9;
+  color: #00afb9;
 }
 
-/*parallax effect*/
+/* parallax effect */
 #parallax {
   background: url("../img/5.about/dmirty-fisenko-HL6gzlxnMjM-unsplash.jpg");
   height: 700px;
@@ -126,15 +136,12 @@ mark {
   justify-content: center;
   align-items: center;
   text-align: center;
+  color: #fff;
 }
 
-/*--> end of parallax effect <--*/
+/* --> end of parallax effect <-- */
 .hooked {
   max-height: 200px;
-}
-
-.abouttext {
-  /*color: #9D6B6C;*/
 }
 
 .borderparagrah {
@@ -152,17 +159,11 @@ mark {
 }
 
 @keyframes color-change {
-  0% {
-    fill: #FCE8E3;
-  }
+  0% { fill: #fce8e3; }
 
-  50% {
-    fill: #fcffad;
-  }
+  50% { fill: #fcffad; }
 
-  100% {
-    fill: #F47382;
-  }
+  100% { fill: #f47382; }
 }
 
 .sun {
@@ -209,15 +210,14 @@ mark {
   animation-timing-function: linear;
 }
 
-/* animation of "uxclashes"*/
-/* animation of "mourning"*/
+/* animation of "uxclashes" */
 @keyframes bubble {
   from {
-    transform: translate(0px, 20px);
+    transform: translate(0, 20px);
   }
 
   to {
-    transform: translate(20px, 0px);
+    transform: translate(20px, 0);
   }
 }
 
@@ -239,11 +239,11 @@ mark {
 
 @keyframes bubble1 {
   from {
-    transform: translate(0px, 20px);
+    transform: translate(0, 20px);
   }
 
   to {
-    transform: translate(-20px, 0px);
+    transform: translate(-20px, 0);
   }
 }
 
@@ -299,8 +299,7 @@ mark {
   display: inline-block;
 }
 
-/* end of animation of "mourning"*/
-/* animation of "svg ux clashes"*/
+/* end of animation of "mourning" */
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -366,7 +365,11 @@ mark {
   display: inline-block;
 }
 
-#course_4, #course_10, #course_11, #course_6, #course_7 {
+#course_4,
+#course_10,
+#course_11,
+#course_6,
+#course_7 {
   opacity: 0;
   animation-name: fadeIn;
   animation-duration: 0.5s;
@@ -377,7 +380,12 @@ mark {
   display: inline-block;
 }
 
-#course_9, #course_12, #course_13, #course_14, #course_15, #course_16 {
+#course_9,
+#course_12,
+#course_13,
+#course_14,
+#course_15,
+#course_16 {
   opacity: 0;
   animation-name: fadeIn;
   animation-duration: 0.5s;
@@ -388,19 +396,16 @@ mark {
   display: inline-block;
 }
 
-/* animation of "uxclashes"*/
 /* end of all animations */
 .bold_text {
   font-weight: 700;
 }
 
-.looks-like-h3 {}
-
 #aboutbixacorabg {
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
-  color: #ffffff;
+  color: #fff;
 }
 
 #experience_title {
@@ -412,12 +417,12 @@ mark {
 #title_experiences {
   padding-bottom: 10px;
   text-align: center;
-  color: #fffbd5;
+  color: #fff;
 }
 
 #hero h1 {
   padding-top: 20px;
-  color: #fffbd5;
+  color: #fff;
   margin-top: 0;
 }
 
@@ -442,7 +447,7 @@ mark {
 }
 
 #aboutimage {
-  width: 100%
+  width: 100%;
 }
 
 #navigation {
@@ -456,21 +461,18 @@ mark {
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
-  color: #ffffff;
-  /*border: 15px solid white;*/
-  /*background-color: #bf6d85;*/
+  color: #fff;/* border: 15px solid white;
+   background-color: #bf6d85; */
 }
 
 #bixacorabox {
-  border: 15px solid white;
-  /*background-color: rgba(0, 0, 0, 0.1);*/
+  border: 15px solid white;/* background-color: rgba(0, 0, 0, 0.1); */
 }
 
 #aboutme {
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
-  color: #ff3333;
 }
 
 #getintouch {
@@ -478,7 +480,7 @@ mark {
   padding-bottom: 30px;
   text-align: center;
   color: #bf6d85;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 #copyright {
@@ -486,16 +488,16 @@ mark {
   padding-bottom: 2px;
   font-size: 0.8em;
   text-align: center;
-  color: #ffffff;
+  color: #fff;
   background-image: linear-gradient(to bottom right, #ffafbd, #ffc3a0);
 }
 
 #skillsandtools {
   background-color: #bf6d85;
-  color: #ffffff;
+  color: #fff;
   padding-top: 30px;
   padding-bottom: 50px;
-  width: 100%
+  width: 100%;
 }
 
 #skillsandtools ul {
@@ -531,6 +533,7 @@ mark {
   width: 35px;
   margin-right: 20px;
 }
+
 .goback:hover svg .st0 {
   fill: #bf6d85;
 }
@@ -543,7 +546,8 @@ p.goback:hover {
   display: none;
 }
 
-.navtoggle, .navtoggle.responsive {
+.navtoggle,
+.navtoggle.responsive {
   position: relative;
 }
 
@@ -571,13 +575,13 @@ p.goback:hover {
   max-height: 50%;
 }
 
-nav>ul {
+nav > ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-nav>ul>li>a {
+nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 300;
@@ -585,28 +589,28 @@ nav>ul>li>a {
   color: #bf6d85;
 }
 
-nav>ul {
+nav > ul {
   list-style-type: none;
   padding: 0;
 }
 
-nav>ul>li {
+nav > ul > li {
   display: inline-block;
 }
 
-nav>ul>li>img {
+nav > ul > li > img {
   padding: 0 15px;
   text-transform: uppercase;
-  font-weight: 100px;
+  font-weight: 100;
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #fff;
   font-family: "Roboto", sans-serif;
-  font-size: 19px;
+  font-size: 20px;
   font-weight: 300;
   line-height: 29px;
-  color: #ffffff;
+  color: #fff;
 }
 
 h1 {
@@ -661,21 +665,30 @@ h2 span.subheading {
   margin-top: 0.8em;
 }
 
+.placetitle {
+  font-family: "Poppins";
+  font-size: 0.8em;
+  font-weight: 700;
+  line-height: 1.5;
+  display: block;
+  text-transform: uppercase;
+  margin-top: 0.1em;
+}
+
 .abouttext {
   font-family: "Poppins";
   font-size: 1.4em;
   font-weight: 200;
   line-height: 1.4;
   display: block;
-  margin-top: 0.8em;
-  outline-style: dotted;
-  outline color: #ffffff;
+  margin: 1em;
+  outline-color: #fff;
   padding: 10px;
 }
 
 .borderabout {
+  outline: #fff;
   outline-style: dotted;
-  outline: #ffffff;
 }
 
 .minilogo {
@@ -684,7 +697,6 @@ h2 span.subheading {
 
 .section {
   padding: 2em 0;
-  margin: 0 0 2em;
 }
 
 img {
@@ -692,8 +704,7 @@ img {
 }
 
 a {
-  color: #f47382;
-  /* no underlining */
+  color: #f47382;/* no underlining */
   text-decoration: none;
 }
 
@@ -726,21 +737,18 @@ selector {
   text-align: center;
 }
 
-/* button rules always at the end of the file, otherwise it can be overwritten*/
+/* button rules always at the end of the file, otherwise it can be overwritten */
 .button {
   display: inline-block;
-  /* needed to override the default link color */
   font-weight: 400;
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
-  /* width of the border, type, color */
   transition: 0.2s opacity;
 }
 
 .button:hover {
   opacity: 0.8;
-  /* Reduces the opacity of the button to 80% */
 }
 
 .button:active {
@@ -749,7 +757,7 @@ selector {
 
 .button.contact {
   background-color: #bf6d85;
-  color: #ffffff;
+  color: #fff;
   text-transform: uppercase;
   font-weight: 300;
   border: 2px solid #bf6d85;
@@ -757,7 +765,7 @@ selector {
 
 .button.contact:hover {
   background-image: linear-gradient(to bottom right, #ffafbd, #ffc3a0);
-  color: #ffffff;
+  color: #fff;
   border: 2px solid #ffafbd;
 }
 
@@ -767,41 +775,61 @@ selector {
 
 .button.experiences {
   background-image: linear-gradient(to bottom right, #ffafbd, #ffc3a0);
-  color: #ffffff;
+  color: #fff;
   text-transform: uppercase;
   font-weight: 300;
-  border: 2px solid #ffffff;
+  border: 2px solid #fff;
 }
 
 .button.experiences:hover {
-  color: #9D6B6C;
+  color: #9d6b6c;
 }
 
 .button.experiences:active {
   color: #bf6d85;
 }
+
 .downbutton {
   margin-top: auto;
 }
 
 .button.curious {
-  background-image: linear-gradient(to bottom right, #ffafbd, #ffc3a0);
-  color: #ffffff;
+  color: #fff;
   text-transform: uppercase;
   font-weight: 300;
-  border: 2px solid #ffffff;
+  border: 2px solid #fff;
   margin-bottom: 25px;
 }
 
 .button.curious:hover {
   background-image: linear-gradient(to bottom right, #bf6d85, #6c5c7a);
-  color: #ffffff;
+  color: #fff;
   border: 2px solid #bf6d85;
   margin-bottom: 25px;
 }
 
 .button.curious:active {
-  color: #9D6B6C;
+  color: #9d6b6c;
+}
+
+.button.about {
+  background-image: linear-gradient(to bottom right, #f98ca3, #ff946e);
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 300;
+  border: 2px solid #fff;
+  margin-bottom: 25px;
+}
+
+.button.about:hover {
+  background-image: linear-gradient(to bottom right, #bf6d85, #6c5c7a);
+  color: #fff;
+  border: 2px solid #bf6d85;
+  margin-bottom: 25px;
+}
+
+.button.about:active {
+  color: #9d6b6c;
 }
 
 .col-12 {
@@ -810,7 +838,7 @@ selector {
 
 /* ================
 For different devides
-====================*/
+==================== */
 [class*="col-"] {
   float: left;
   padding: 10px;
@@ -842,7 +870,7 @@ For different devides
   nav {
     width: auto;
     float: right;
-    margin-top: 0px;
+    margin-top: 0;
     flex-direction: row;
   }
 
@@ -850,7 +878,7 @@ For different devides
     flex-direction: row;
   }
 
-  nav>ul {
+  nav > ul {
     margin: 1em 0;
   }
 
@@ -869,9 +897,10 @@ For different devides
   }
 
   /* Top and Bottom borders come in */
-  ul.topBotomBordersIn li:not(.no-animation) a:before, ul.topBotomBordersIn li:not(.no-animation) a:after {
+  ul.topBotomBordersIn li:not(.no-animation) a::before,
+  ul.topBotomBordersIn li:not(.no-animation) a::after {
     position: absolute;
-    left: 0px;
+    left: 0;
     width: 100%;
     height: 1px;
     background: #fcd2c5;
@@ -880,19 +909,20 @@ For different devides
     transition: all 0.3s;
   }
 
-  ul.topBotomBordersIn li:not(.no-animation) a:before {
-    top: 0px;
+  ul.topBotomBordersIn li:not(.no-animation) a::before {
+    top: 0;
     transform: translateY(-10px);
   }
 
-  ul.topBotomBordersIn li:not(.no-animation) a:after {
-    bottom: 0px;
+  ul.topBotomBordersIn li:not(.no-animation) a::after {
+    bottom: 0;
     transform: translateY(10px);
   }
 
-  ul.topBotomBordersIn li:not(.no-animation) a:hover:before, ul.topBotomBordersIn li:not(.no-animation) a:hover:after {
+  ul.topBotomBordersIn li:not(.no-animation) a:hover::before,
+  ul.topBotomBordersIn li:not(.no-animation) a:hover::after {
     opacity: 1;
-    transform: translateY(0px);
+    transform: translateY(0);
   }
 
   ul.topBotomBordersIn li {
@@ -908,13 +938,4 @@ For different devides
   .col-lg-5 {
     width: 40%;
   }
-}
-
-@media only screen and (min-width: 1440px) {}
-
-@media only screen and (min-width: 1920px) {}
-
-element.style {
-  list-style-type: none;
-  padding: 0;
 }

@@ -1,14 +1,14 @@
-console.log("Welcome to my Bixacora!");
+console.log('Welcome to my Bixacora!')
 
 function menuToggle() {
-  var x = document.getElementById('myNavtoggle');
+  var x = document.getElementById('myNavtoggle')
   if (x.className === 'navtoggle') {
-    x.className += ' responsive';
+    x.className += ' responsive'
   } else {
-    x.className = 'navtoggle';
+    x.className = 'navtoggle'
   }
 }
 
 function goBack() {
-  window.history.back();
+  window.history.back()
 }
