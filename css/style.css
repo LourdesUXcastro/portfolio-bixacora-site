@@ -126,7 +126,7 @@ mark {
 /* parallax effect */
 #parallax {
   background: url("../img/5.about/dmirty-fisenko-HL6gzlxnMjM-unsplash.jpg");
-  height: 700px;
+  height: 900px;
   background-attachment: fixed;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -159,11 +159,17 @@ mark {
 }
 
 @keyframes color-change {
-  0% { fill: #fce8e3; }
+  0% {
+    fill: #fce8e3;
+  }
 
-  50% { fill: #fcffad; }
+  50% {
+    fill: #fcffad;
+  }
 
-  100% { fill: #f47382; }
+  100% {
+    fill: #f47382;
+  }
 }
 
 .sun {
@@ -461,12 +467,14 @@ mark {
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
-  color: #fff;/* border: 15px solid white;
+  color: #fff;
+  /* border: 15px solid white;
    background-color: #bf6d85; */
 }
 
 #bixacorabox {
-  border: 15px solid white;/* background-color: rgba(0, 0, 0, 0.1); */
+  border: 15px solid white;
+  /* background-color: rgba(0, 0, 0, 0.1); */
 }
 
 #aboutme {
@@ -575,13 +583,13 @@ p.goback:hover {
   max-height: 50%;
 }
 
-nav > ul {
+nav>ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-nav > ul > li > a {
+nav>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 300;
@@ -589,16 +597,16 @@ nav > ul > li > a {
   color: #bf6d85;
 }
 
-nav > ul {
+nav>ul {
   list-style-type: none;
   padding: 0;
 }
 
-nav > ul > li {
+nav>ul>li {
   display: inline-block;
 }
 
-nav > ul > li > img {
+nav>ul>li>img {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 100;
@@ -677,10 +685,9 @@ h2 span.subheading {
 
 .abouttext {
   font-family: "Poppins";
-  font-size: 1.4em;
+  font-size: 1em;
   font-weight: 200;
   line-height: 1.4;
-  display: block;
   margin: 1em;
   outline-color: #fff;
   padding: 10px;
@@ -704,7 +711,8 @@ img {
 }
 
 a {
-  color: #f47382;/* no underlining */
+  color: #f47382;
+  /* no underlining */
   text-decoration: none;
 }
 
@@ -836,6 +844,10 @@ selector {
   width: 100%;
 }
 
+#aboutbixacorabg .column {
+  margin-bottom: 20px;
+}
+
 /* ================
 For different devides
 ==================== */
@@ -927,6 +939,23 @@ For different devides
 
   ul.topBotomBordersIn li {
     position: relative;
+  }
+
+  #aboutbixacorabg .row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #aboutbixacorabg .col-md-6 {
+    width: 48%;
+  }
+
+  .abouttext {
+    font-size: 1.4em;
+  }
+
+  #parallax {
+    height: 700px;
   }
 }
 
