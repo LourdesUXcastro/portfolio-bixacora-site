@@ -1,6 +1,6 @@
 console.log('Welcome to my Bixacora!')
 
-function menuToggle() {
+function menuToggle () {
   var x = document.getElementById('myNavtoggle')
   if (x.className === 'navtoggle') {
     x.className += ' responsive'
@@ -9,6 +9,6 @@ function menuToggle() {
   }
 }
 
-function goBack() {
+function goBack () {
   window.history.back()
 }
