@@ -720,8 +720,7 @@ img {
 }
 
 a {
-  color: #f47382;
-  /* no underlining */
+  color: #f47382;/* no underlining */
   text-decoration: none;
 }
 
